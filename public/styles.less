@@ -1,0 +1,75 @@
+// Variables:
+@base-color: whitesmoke;
+@second-color: #6c757d;
+
+body {
+  background-color: @base-color;
+  box-sizing: border-box;
+}
+
+header {
+  a span.navColor {
+    color: @second-color !important;
+    &:hover {
+      color: @base-color !important;
+    }
+  }
+  ul li button.navColor,
+  ul li a.navColor {
+    color: @base-color !important;
+    &:hover {
+      color: @second-color !important;
+    }
+  }
+}
+
+main {
+  h1 {
+    margin: 3rem auto 2rem auto;
+    text-align: center;
+  }
+  div {
+    width: 40%;
+    min-width: 550px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    table.table-service {
+      width: 100%;
+    }
+    p {
+      text-align: left;
+      span {
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+div#footerDiv {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.5rem;
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    h4 {
+      margin-bottom: 0;
+      color: @second-color !important;
+    }
+  }
+}
+
+// Tooltips Customizing:
+div.tooltip-inner {
+  background-color: var(--bs-primary) !important;
+  color: @base-color !important;
+}
+div.tooltip-arrow::before {
+  border-bottom-color: var(--bs-primary) !important;
+  color: @base-color !important;
+}
